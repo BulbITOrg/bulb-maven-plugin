@@ -1,3 +1,2 @@
 language: java
-script:
-  - ./mvnw clean install source:jar javadoc:jar
+script: mvn clean install source:jar javadoc:jar
