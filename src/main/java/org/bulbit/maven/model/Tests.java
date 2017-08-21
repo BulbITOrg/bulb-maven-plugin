@@ -1,4 +1,4 @@
-package com.ju.bulb.maven.model;
+package org.bulbit.maven.model;
 
 import javax.xml.bind.annotation.*;
 

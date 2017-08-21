@@ -1,4 +1,4 @@
-package com.ju.bulb.maven;
+package org.bulbit.maven;
 
 import javax.xml.bind.annotation.adapters.XmlAdapter;
 

@@ -1,4 +1,4 @@
-package it.com.ju.bulb.maven;
+package it.org.bulbit.maven;
 
 import java.util.List;
 import java.util.ArrayList;

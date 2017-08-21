@@ -1,6 +1,6 @@
-package com.ju.bulb.maven.model;
+package org.bulbit.maven.model;
 
-import com.ju.bulb.maven.AdapterCDATA;
+import org.bulbit.maven.AdapterCDATA;
 
 import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;

@@ -1,7 +1,7 @@
-package ut.com.ju.bulb.maven;
+package ut.org.bulbit.maven;
 
-import com.ju.bulb.maven.TestReportMojo;
-import com.ju.bulb.maven.model.Tests;
+import org.bulbit.maven.TestReportMojo;
+import org.bulbit.maven.model.Tests;
 import org.apache.maven.plugin.testing.AbstractMojoTestCase;
 import org.apache.maven.project.MavenProject;
 import org.codehaus.plexus.util.FileUtils;

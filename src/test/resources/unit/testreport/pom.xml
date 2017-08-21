@@ -22,7 +22,7 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>com.ju.maven</groupId>
+                <groupId>org.bulbit.maven</groupId>
                 <artifactId>testreport-maven-plugin</artifactId>
                 <version>1.0.0</version>
                 <configuration>

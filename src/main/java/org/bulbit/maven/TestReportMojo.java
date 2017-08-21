@@ -1,4 +1,4 @@
-package com.ju.bulb.maven;
+package org.bulbit.maven;
 
 import java.io.File;
 import java.io.IOException;
@@ -13,9 +13,9 @@ import com.github.javaparser.ast.body.BodyDeclaration;
 import com.github.javaparser.ast.body.MethodDeclaration;
 import com.github.javaparser.ast.body.TypeDeclaration;
 import com.github.javaparser.ast.expr.AnnotationExpr;
-import com.ju.bulb.maven.model.Test;
-import com.ju.bulb.maven.parser.CommentProcessor;
-import com.ju.bulb.maven.model.Tests;
+import org.bulbit.maven.model.Test;
+import org.bulbit.maven.parser.CommentProcessor;
+import org.bulbit.maven.model.Tests;
 import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.maven.plugin.MojoFailureException;

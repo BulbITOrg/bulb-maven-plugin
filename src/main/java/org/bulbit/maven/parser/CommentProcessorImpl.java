@@ -1,4 +1,4 @@
-package com.ju.bulb.maven.parser;
+package org.bulbit.maven.parser;
 
 /**
  * Created by janisupitis on 09/01/2017.
