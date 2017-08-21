@@ -8,6 +8,11 @@ import java.io.Serializable;
 
 import java.util.List;
 
+/**
+ * Class representing information associated to a single test instance.
+ *
+ * @author Janis Upitis
+ */
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Test implements Serializable {
     @XmlElement

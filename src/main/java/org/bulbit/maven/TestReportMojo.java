@@ -14,7 +14,6 @@ import com.github.javaparser.ast.body.MethodDeclaration;
 import com.github.javaparser.ast.body.TypeDeclaration;
 import com.github.javaparser.ast.expr.AnnotationExpr;
 import org.bulbit.maven.model.Test;
-import org.bulbit.maven.parser.CommentProcessor;
 import org.bulbit.maven.model.Tests;
 import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;
@@ -29,13 +28,16 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 
+/**
+ * Class implementing maven plugin.
+ *
+ * @author Janis Upitis
+ */
 @Mojo(name = "testreport", defaultPhase = LifecyclePhase.TEST)
 public class TestReportMojo extends AbstractMojo {
     private static final String TICKETS_LIST_PREFIX = "Tickets:";
 
     private Tests tests;
-
-    private CommentProcessor commentProcessor;
 
     @Parameter(defaultValue = "${project}", required = true, readonly = true)
     private MavenProject mavenProject;

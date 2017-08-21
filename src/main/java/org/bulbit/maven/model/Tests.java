@@ -5,6 +5,11 @@ import javax.xml.bind.annotation.*;
 import java.io.Serializable;
 import java.util.List;
 
+/**
+ * Class representing tests list.
+ *
+ * @author Janis Upitis
+ */
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Tests implements Serializable {
