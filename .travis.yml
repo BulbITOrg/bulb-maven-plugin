@@ -1,4 +1,3 @@
 language: java
-
-after_success:
-  - javadoc -private -sourcepath "src/main/java"
+script:
+  mvn clean install source:jar javadoc:jar
