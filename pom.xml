@@ -5,12 +5,36 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.bulbit.maven</groupId>
-    <artifactId>testreport-maven-plugin</artifactId>
+    <artifactId>bulb-maven-plugin</artifactId>
     <version>1.0.0</version>
     <packaging>maven-plugin</packaging>
+    <name>${project.groupId}:${project.artifactId}</name>
+    <description>Maven plugin what exports XML report about tests compatible with Jira plugin made by bulbit.org.</description>
+    <url>http://www.bulbit.org/maven-plugin</url>
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <developers>
+        <developer>
+            <name>Janis Upitis</name>
+            <email>janis.upitis@gmail.com</email>
+            <organization>BulbIT</organization>
+            <organizationUrl>http://www.bulbit.org</organizationUrl>
+        </developer>
+    </developers>
+    <scm>
+        <connection>scm:git:git://github.com/JanisU/bulb-maven-plugin.git</connection>
+        <developerConnection>scm:git:ssh://github.com:JanisU/bulb-maven-plugin.git</developerConnection>
+        <url>http://github.com/JanisU/bulb-maven-plugin/tree/master</url>
+    </scm>
 
     <properties>
         <junit.version>4.12</junit.version>
+        <maven.api.version>3.3.9</maven.api.version>
     </properties>
 
     <dependencies>
@@ -18,23 +42,23 @@
         <dependency>
             <groupId>org.apache.maven</groupId>
             <artifactId>maven-plugin-api</artifactId>
-            <version>3.3.9</version>
+            <version>${maven.api.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.maven</groupId>
             <artifactId>maven-core</artifactId>
-            <version>3.3.9</version>
+            <version>${maven.api.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.maven</groupId>
             <artifactId>maven-artifact</artifactId>
-            <version>3.3.9</version>
+            <version>${maven.api.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.apache.maven</groupId>
             <artifactId>maven-compat</artifactId>
-            <version>3.3.9</version>
+            <version>${maven.api.version}</version>
         </dependency>
 
         <dependency>
@@ -93,6 +117,44 @@
                         <version>2.19.1</version>
                     </dependency>
                 </dependencies>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <version>1.6</version>
+                <executions>
+                    <execution>
+                        <id>sign-artifacts</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>sign</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>

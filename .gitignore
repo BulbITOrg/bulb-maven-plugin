@@ -1,5 +1,6 @@
 target/
 .idea/
 .idea/workspace.xml
+bulb-maven-plugin.iml
 testreport-maven-plugin.iml
 src/test/resources/unit/testreport/log.txt
