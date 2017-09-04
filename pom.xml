@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.bulbit.maven</groupId>
-    <artifactId>testreport-maven-plugin</artifactId>
+    <artifactId>bulb-maven-plugin</artifactId>
     <version>1.0.0</version>
     <packaging>maven-plugin</packaging>
     <name>${project.groupId}:${project.artifactId}</name>

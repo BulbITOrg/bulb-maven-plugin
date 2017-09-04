@@ -23,7 +23,7 @@
         <plugins>
             <plugin>
                 <groupId>org.bulbit.maven</groupId>
-                <artifactId>testreport-maven-plugin</artifactId>
+                <artifactId>bulb-maven-plugin</artifactId>
                 <version>1.0.0</version>
                 <configuration>
                 </configuration>
