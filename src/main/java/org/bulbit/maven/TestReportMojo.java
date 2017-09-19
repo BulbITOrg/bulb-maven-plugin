@@ -171,7 +171,7 @@ public class TestReportMojo extends AbstractMojo {
             t.setTests(tests);
             this.tests = t;
 
-            this.storeReportAsFile(new File(Paths.get(this.mavenProject.getBuild().getOutputDirectory().toString(), "trackerTestReport.xml").toString()), t);
+            this.storeReportAsFile(new File(Paths.get(this.mavenProject.getBuild().getDirectory().toString(), "trackerTestReport.xml").toString()), t);
         } catch (IOException ex) {
             throw new MojoFailureException("Failed to process source files.", ex);
         } catch (ParseException ex) {

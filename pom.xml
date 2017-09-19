@@ -6,7 +6,7 @@
 
     <groupId>org.bulbit.maven</groupId>
     <artifactId>bulb-maven-plugin</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
     <packaging>maven-plugin</packaging>
     <name>${project.groupId}:${project.artifactId}</name>
     <description>Maven plugin what exports XML report about tests compatible with Jira plugin made by bulbit.org.</description>

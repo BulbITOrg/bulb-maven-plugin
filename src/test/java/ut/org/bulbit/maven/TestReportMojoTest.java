@@ -37,7 +37,7 @@ public class TestReportMojoTest extends AbstractMojoTestCase {
 
         MavenProject p = new MavenProject();
         p.getTestCompileSourceRoots().add(BASE_PATH + "src/test/java");
-        p.getBuild().setOutputDirectory("target");
+        p.getBuild().setDirectory("target");
         myMojo.setMavenProject(p);
         myMojo.execute();
 
